@@ -82,7 +82,7 @@ h6 {
   border-radius: 40px; }
 
 .btn-primary {
-  background: #EAA4A4;
+  background: #FEE9CA;
   color: #fff; }
   .btn-primary:hover {
     background: #e07b7b; }

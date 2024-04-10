@@ -11,6 +11,10 @@
         <div class="site-contact-form">
           <h4>{{ .Params.form_heading }}</h4>
           <form id="contact-form" action="{{ .Site.Params.fabform }}" method="post">
+            <input type="hidden" name="accessKey" value="f79c6bb5-31d2-47a0-91a4-c24869d00861">
+            <input type="hidden" name="subject" value="Contact form moerzinger.com">
+            <!-- Replace with the url you want to redirect to -->
+            <input type="hidden" name="redirectTo" value="http://localhost:1313/thankyou/"> 
             <div class="row">
               <div class="col-lg-6">
                 <input type="text" class="form-control" name="first-name" id="first-name" placeholder="{{ .Site.Params.contactForm.placeholder_first_name }}" required>
