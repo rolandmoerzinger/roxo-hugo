@@ -6,6 +6,12 @@
       <div class="col-12">
         <div class="site-about-wrapper">
           <div class="site-about-company">
+            <div align="center">
+            {{ if .Params.profilepicture }}
+              <img src = "{{ .Params.profilepicture | absURL}}" alt="{{ .Params.profilepicture_alt }}" width="200"  />
+            {{ end }}
+            </div>
+            <br>
             <h1>
               {{ .Params.heading }}
             </h1>
@@ -13,7 +19,7 @@
           <div class="site-about-description">
             <p>
               {{ .Description }}
-            </p>
+              </p>
           </div>
         </div>
       </div>
